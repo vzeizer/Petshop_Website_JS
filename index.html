@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetShop - Agendamentos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Painel de Agendamentos PetShop</h1>
+    </header>
+
+    <main class="container">
+        <section class="card form-card">
+            <h2>Novo Agendamento</h2>
+            <form id="appointment-form">
+
+                <div class="photo-upload-section">
+                    <label>Foto do Pet</label>
+                    <img src="data:image/jpeg;base64,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" alt="Foto do Pet" id="photo-preview" class="photo-preview">
+                    <input type="file" id="pet-photo-input" accept="image/*">
+                    <label for="pet-photo-input" class="btn-upload">Escolher Foto</label>
+                </div>
+
+                <div class="form-group">
+                    <label for="pet-name">Nome do Pet:</label>
+                    <input type="text" id="pet-name" placeholder="Ex: Thor" required>
+                </div>
+                <div class="form-group">
+                    <label for="owner-name">Nome do Dono:</label>
+                    <input type="text" id="owner-name" placeholder="Ex: Jane Foster" required>
+                </div>
+                <div class="form-group">
+                    <label for="appointment-date">Data:</label>
+                    <input type="date" id="appointment-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="appointment-hour">Hora:</label>
+                    <select id="appointment-hour" required>
+                        </select>
+                </div>
+                <button type="submit" class="btn-submit">Adicionar Agendamento</button>
+            </form>
+        </section>
+
+        <section class="card appointments-card">
+            <div class="filter-header">
+                <h2>Agenda</h2>
+                <div class="filters-container">
+                    <div class="filter-group">
+                        <label for="filter-owner">Filtrar por Dono:</label>
+                        <input type="text" id="filter-owner" placeholder="Digite o nome do dono">
+                    </div>
+                    <div class="filter-group">
+                        <label for="filter-date">Filtrar por Data:</label>
+                        <input type="date" id="filter-date">
+                    </div>
+                </div>
+            </div>
+
+            <div id="appointments-list">
+                <div class="period">
+                    <h3>Manhã (06:00 - 11:59)</h3>
+                    <ul id="morning-appointments" class="appointment-period"></ul>
+                </div>
+
+                <div class="period">
+                    <h3>Tarde (12:00 - 17:59)</h3>
+                    <ul id="afternoon-appointments" class="appointment-period"></ul>
+                </div>
+
+                <div class="period">
+                    <h3>Noite (18:00 - 23:59)</h3>
+                    <ul id="night-appointments" class="appointment-period"></ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
